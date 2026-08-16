@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeMTA Launcher - Letöltés</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%), 
+                        url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1920&auto=format&fit=crop') no-repeat center center fixed;
+            background-blend-mode: overlay;
+            background-size: cover;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(13, 17, 23, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #38bdf8;
+            letter-spacing: 1px;
+        }
+
+        .logo i {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            color: #38bdf8;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            flex-grow: 1;
+        }
+
+        .hero-badge {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        h1 span {
+            color: #38bdf8;
+        }
+
+        p.subtitle {
+            font-size: 18px;
+            color: #94a3b8;
+            max-width: 600px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .download-box {
+            background: rgba(22, 27, 34, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            color: #ffffff;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 0 8px 20px rgba(2, 132, 199, 0.4);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(2, 132, 199, 0.6);
+            background: linear-gradient(135deg, #0369a1 100%, #0284c7 0%);
+        }
+
+        .specs {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-around;
+            color: #64748b;
+            font-size: 13px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 20px;
+        }
+
+        .specs div span {
+            display: block;
+            color: #cbd5e1;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(13, 17, 23, 0.9);
+            color: #64748b;
+            font-size: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 20px; }
+            h1 { font-size: 36px; }
+            .download-box { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>SEEMTA LAUNCHER</span>
+        </div>
+        <nav>
+            <a href="#" class="active">Főoldal</a>
+            <a href="#">Szabályzat</a>
+            <a href="#">Fórum</a>
+            <a href="#">Támogatás</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="hero-badge">
+            <i class="fa-solid fa-circle-check"></i> v4.2.1 Hivatalos Kliens
+        </div>
+        <h1>Lépj be a SeeMTA <span>Világába</span></h1>
+        <p class="subtitle">Töltsd le a hivatalos SeeMTA klienst, csatlakozz a szerverekhez egyetlen gombnyomással, és élvezd a legmagasabb szintű szerepjátékot.</p>
+
+        <div class="download-box">
+            <a href="#" class="download-btn" onclick="startDownload(event)">
+                <i class="fa-solid fa-download"></i> Launcher Letöltése
+            </a>
+            
+            <div class="specs">
+                <div>Fájlméret: <span>45.2 MB</span></div>
+                <div>Verzió: <span>v4.2.1</span></div>
+                <div>Platform: <span>Windows 10/11</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 SeeMTA Launcher. Minden jog fenntartva. Nem hivatalos rajongói/szerver oldal.</p>
+    </footer>
+
+    <script>
+        function startDownload(e) {
+            e.preventDefault();
+            alert('A letöltés elindult! (Ez egy demó oldal, a fájl hamarosan megérkezik.)');
+            // Ide jöhetne a valós letöltési link (.exe fájlra mutató hivatkozás)
+        }
+    </script>
+
+</body>
+</html>
